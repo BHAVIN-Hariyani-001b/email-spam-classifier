@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Welcome To Email Spam Classification</h1>
+        <div class="main-form">
+          <form action="/predict" method="post">
+            <div class="textarea-input">
+              <textarea
+                name="email_text"
+                id="email_text"
+                placeholder="Enter Your Mail"
+              ></textarea>
+            </div>
+            <button type="submit" id="predict-btn">Predict</button>
+          </form>
+          <div class="result-show">
+            {% if not message %}
+                <p>Enter Email For Check Email Spam or Not</p>
+            {% else %}
+                <p>{{ message }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
