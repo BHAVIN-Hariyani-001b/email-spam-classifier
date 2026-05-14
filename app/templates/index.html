@@ -20,19 +20,27 @@
                 name="email_text"
                 id="email_text"
                 placeholder="Enter Your Mail"
-              ></textarea>
+              >
+{{ data }}</textarea
+              >
             </div>
             <button type="submit" id="predict-btn">Predict</button>
           </form>
           <div class="result-show">
             {% if not message %}
-                <p>Enter Email For Check Email Spam or Not</p>
+            <p>Enter Email For Check Email Spam or Not</p>
             {% else %}
-                <p>{{ message }}</p>
+            <p>{{ message }}</p>
             {% endif %}
           </div>
         </div>
       </div>
     </div>
+    <script>
+      let resultShow = document.querySelector(".result-show");
+      document.querySelector("#predict-btn").addEventListener("click", () => {
+        resultShow.innerHTML = "predicting...";
+      });
+    </script>
   </body>
 </html>
