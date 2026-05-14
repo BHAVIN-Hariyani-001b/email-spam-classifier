@@ -12,15 +12,31 @@ A Machine Learning-based web application that classifies emails as **Spam** or *
 
 ## 📌 Project Overview
 
-Email spam detection is a classic **Natural Language Processing (NLP)** and **Text Classification** problem. This project analyzes the content of an email and predicts whether it is spam or legitimate.
+## 📌 Project Overview
+
+Email spam detection is a classic **Text Classification** problem in **Machine Learning**. The system analyzes the content of an email and predicts whether it is **Spam** or **Not Spam**.
+
+This project uses **Natural Language Processing (NLP) techniques** because emails are unstructured text data. Machine learning models cannot work directly with raw text, so the text must first be cleaned and transformed into numerical features.
+
+The application applies several NLP techniques, including:
+
+- Converting text to lowercase
+- Removing punctuation and special characters
+- Removing common stopwords
+- Stemming words using Porter Stemmer
+- Converting text into numerical vectors using **CountVectorizer**
+
+After preprocessing, the numerical features are passed to a **Multinomial Naive Bayes** classifier, which predicts whether the email is spam or not spam in real time through a Flask web application.
 
 The application performs:
 
 - Text cleaning and preprocessing
+- Lowercase conversion
+- Punctuation removal
 - Stopword removal
 - Word stemming
-- TF-IDF feature extraction
-- Logistic Regression classification
+- Feature extraction using CountVectorizer
+- Spam classification using Multinomial Naive Bayes
 - Real-time prediction through a Flask web interface
 
 ---
@@ -180,8 +196,8 @@ Deployment to Render
 ## 👨‍💻 Author
 BH EDIT
 
-GitHub: https://github.com/BHAVIN-Hariyani-001b
-LinkedIn: https://www.linkedin.com/in/bhavin-hariyani-598263310/
+- GitHub: https://github.com/BHAVIN-Hariyani-001b
+- LinkedIn: https://www.linkedin.com/in/bhavin-hariyani-598263310/
 
 ---
 
