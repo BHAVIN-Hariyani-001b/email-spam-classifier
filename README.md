@@ -9,12 +9,12 @@ A Machine Learning-based web application that classifies emails as **Spam** or *
 🌐 **Live Application:** https://email-spam-classifier-rc9e.onrender.com/
 
 ---
-
 ## 📷 Screenshots
-
-['Screenshot1'](./image/Screenshot%202026-05-14%20104353.png)
-['Screenshot2'](./image/Screenshot%202026-05-14%20104458.png)
-
+---
+['Screenshot1'](image/Screenshot%202026-05-14%20104353.png)
+---
+['Screenshot2'](image/Screenshot%202026-05-14%20104458.png)
+---
 ---
 
 ## 📌 Project Overview
