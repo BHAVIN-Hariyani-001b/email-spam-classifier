@@ -11,9 +11,9 @@ A Machine Learning-based web application that classifies emails as **Spam** or *
 ---
 ## 📷 Screenshots
 ---
-[Screenshot1](image/Screenshot1.png)
+![Screenshot1](image/Screenshot1.png)
 ---
-[Screenshot2](image/Screenshot2.png)
+![Screenshot2](image/Screenshot2.png)
 ---
 ---
 
