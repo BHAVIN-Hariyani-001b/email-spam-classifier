@@ -12,8 +12,6 @@ A Machine Learning-based web application that classifies emails as **Spam** or *
 
 ## 📌 Project Overview
 
-## 📌 Project Overview
-
 Email spam detection is a classic **Text Classification** problem in **Machine Learning**. The system analyzes the content of an email and predicts whether it is **Spam** or **Not Spam**.
 
 This project uses **Natural Language Processing (NLP) techniques** because emails are unstructured text data. Machine learning models cannot work directly with raw text, so the text must first be cleaned and transformed into numerical features.
