@@ -10,6 +10,13 @@ A Machine Learning-based web application that classifies emails as **Spam** or *
 
 ---
 
+## 📷 Screenshots
+
+['Screenshot1'](./image/Screenshot%202026-05-14%20104353.png)
+['Screenshot2'](./image/Screenshot%202026-05-14%20104458.png)
+
+---
+
 ## 📌 Project Overview
 
 Email spam detection is a classic **Text Classification** problem in **Machine Learning**. The system analyzes the content of an email and predicts whether it is **Spam** or **Not Spam**.
@@ -162,12 +169,6 @@ Claim your $1000 reward now!	Spam
 Please review the attached project report.	Not Spam
 ```
 ---
-## 📷 Screenshots
-
-Add screenshots of your application here.
-
----
-
 ## 🎯 Future Improvements
 Add confidence scores
 Support multiple ML models
