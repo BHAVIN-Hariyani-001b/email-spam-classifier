@@ -17,7 +17,10 @@ def predict():
 
     if not data:
         return redirect(url_for('predict.home', message="Please enter email text for prediction."))
-
-    prediction = text_cleaner.predict_spam(data)
+    try:
+        prediction = text_cleaner.predict_spam(data)
+    except Exception as e:
+        print(f"Error during prediction: {e}")
+        return redirect(url_for('predict.home', message=f"Error during prediction"))
 
     return redirect(url_for('predict.home',message=str(prediction),data=str(data)))
