@@ -1,8 +1,15 @@
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+from nltk import download
 import pickle
 import os
 
+# Download stopwords if they are not already available
+try:
+    stopwords.words("english")
+except LookupError:
+    download("stopwords")
+    
 # Initialize once
 class TextCleaner:
     stop_words = set(stopwords.words('english'))
