@@ -3,8 +3,6 @@ from app.routes.cleaner_function import TextCleaner
 
 predict_bp = Blueprint('predict', __name__)
 
-text_cleaner = TextCleaner()
-
 @predict_bp.route('/',methods=['GET'])
 def home():
     message = request.args.get('message', '')
@@ -18,6 +16,7 @@ def predict():
     if not data:
         return redirect(url_for('predict.home', message="Please enter email text for prediction."))
     try:
+        text_cleaner = TextCleaner()
         prediction = text_cleaner.predict_spam(data)
     except Exception as e:
         print(f"Error during prediction: {e}")
